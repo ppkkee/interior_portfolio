@@ -1,0 +1,52 @@
+body{
+    font-family: 'Nanum Myeongjo', serif;
+    color:midnightblue
+}
+aside{
+    position: fixed;
+    width:80%;
+    height: 80vh;
+    top: 80px;
+    left: 50px;
+background-color:whitesmoke;
+    padding: 150px;
+    box-sizing: border-box;
+}
+.title{
+    font-size: 40px;
+    margin: 0;
+    z-index: 9999
+   
+}
+.subtitle{
+    font-size: 30px;
+    margin: 0;
+}
+.work{
+     font-family: 'Nanum Gothic Coding', monospace;
+}
+.cad{
+    width: 100%;
+    float: left;
+
+
+}
+.cad>img{
+    width: 100%;
+}
+.right{
+    position: absolute;
+    right: 0;
+text-align: right;
+   
+}
+@media screen and (max-width:1200px){
+    aside{
+        position: absolute;
+        z-index: 999;
+        height: 500px;
+        opacity: 0.9;
+        padding: 80px;
+        background: none;
+    }
+}

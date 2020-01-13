@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>park koeun/portfolio</title>
+		<meta name="description" content="Some distortion hover effects on images using SVG filters." />
+		<meta name="keywords" content="distortion, svg filter, hover, image, effect, web, javascript" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link href="https://fonts.googleapis.com/css?family=Cardo|Nunito+Sans" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+	</head>
+	<body class="demo-1">
+		<main>		
+			<div class="frame">			
+			
+				<div class="frame__credits">
+				
+					<span class="frame__text">park koeun</span>
+				
+				</div>
+				<div class="frame__contact">
+					<h4 class="frame__heading">Contact</h4>
+					<span class="frame__text">ppkkee717@naver.com</span>
+					<span class="frame__text">01097037738</span>
+				</div>
+				<div class="frame__photography">Interior portfolio</div>
+				
+			</div>
+			<div class="content">
+				<svg class="distort" width="350" height="450" viewBox="0 0 350 450">
+					<filter id="distortionFilter">
+						<feTurbulence type="turbulence" baseFrequency="0.07 0.01" numOctaves="5" seed="2" stitchTiles="stitch" x="0%" y="0%" width="100%" height="100%" result="noise"/>
+						<feDisplacementMap in="SourceGraphic" in2="noise" scale="0" xChannelSelector="R" yChannelSelector="B" x="0%" y="0%" width="100%" height="100%" filterUnits="userSpaceOnUse"/>
+					</filter>
+					<g filter="url(#distortionFilter)">
+						<image class="distort__img" x="50" y="50" xlink:href="img/img1.jpg" height="350" width="250"/>
+						<image class="distort__img" x="50" y="50" xlink:href="img/img2.jpg" height="350" width="250"/>
+						<image class="distort__img" x="50" y="50" xlink:href="img/img3.jpg" height="350" width="250"/>
+						<image class="distort__img" x="50" y="50" xlink:href="img/img4.jpg" height="350" width="250"/>
+						<image class="distort__img" x="50" y="50" xlink:href="img/img5.jpg" height="350" width="250"/>
+						<image class="distort__img" x="50" y="50" xlink:href="img/img6.jpg" height="350" width="250"/>
+					
+					</g>
+				</svg>
+				<nav class="menu">
+					<a href="studio.html" class="menu__link">Studio</a>
+					<a href="hairsalon.html" class="menu__link">Hair  salon</a>
+					<a href="hairsalon2.html" class="menu__link">Hair  salon2</a>
+					<a href="ofiice.html" class="menu__link">Office</a>
+					<a href="modelhouse.html" class="menu__link">Model house</a>
+					<a href="#" class="menu__link">Bakery</a>
+					
+				</nav>
+			</div>
+		</main>
+		<script src="js/charming.min.js"></script>
+		<script src="js/TweenMax.min.js"></script>
+		<script src="js/demo.js"></script>
+	</body>
+</html>
